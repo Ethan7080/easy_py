@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+sampleproject.egg-info/PKG-INFO
+sampleproject.egg-info/SOURCES.txt
+sampleproject.egg-info/dependency_links.txt
+sampleproject.egg-info/entry_points.txt
+sampleproject.egg-info/requires.txt
+sampleproject.egg-info/top_level.txt
+tests/__init__.py
+tests/test_simple.py

@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='easy_py',
-    version='0.0.1',
+    version='0.1.2',
     packages=find_packages(),
     description='Makes your python programming adventure way easier with shortened functions.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Ethan Wang',
     author_email='ethanwanglife@gmail.com',
-    url='https://github.com/yourusername/your_package',
+    url='https://github.com/Ethan7080/easy_py',
     license='MIT',
     install_requires=[
         

@@ -8,11 +8,8 @@
 # Choosing a build backend:
 # https://packaging.python.org/en/latest/tutorials/packaging-projects/#choosing-a-build-backend
 [build-system]
-# A list of packages that are needed to build your package:
-requires = ["setuptools"]  # REQUIRED if [build-system] table is used
-# The name of the Python object that frontends will use to perform the build:
-build-backend = "setuptools.build_meta"  # If not defined, then legacy behavior can happen.
-
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 # This is the name of your project. The first time you publish this
@@ -26,19 +23,19 @@ build-backend = "setuptools.build_meta"  # If not defined, then legacy behavior 
 # There are some restrictions on what makes a valid project name
 # specification here:
 # https://packaging.python.org/specifications/core-metadata/#name
-name = "sampleproject"  # REQUIRED, is the only field that cannot be marked as dynamic.
+name = "easy_py"  # REQUIRED, is the only field that cannot be marked as dynamic.
 
 # Versions should comply with PEP 440:
 # https://www.python.org/dev/peps/pep-0440/
 #
 # For a discussion on single-sourcing the version, see
 # https://packaging.python.org/guides/single-sourcing-package-version/
-version = "3.0.0"  # REQUIRED, although can be dynamic
+version = "1.2.0"  # REQUIRED, although can be dynamic
 
 # This is a one-line description or tagline of what your project does. This
 # corresponds to the "Summary" metadata field:
 # https://packaging.python.org/specifications/core-metadata/#summary
-description = "A sample Python project"
+description = "A module that will make your coding easier"
 
 # This is an optional longer description of your project that represents
 # the body of text which users will see when they visit PyPI.
@@ -46,6 +43,12 @@ description = "A sample Python project"
 # Often, this is the same as your README, so you can just read it in from
 # that file directly.
 #
+authors = [
+  {name = "Ethan Wang", email = "ethanwanglife@gmail.com"},
+]
+maintainers = [
+  {name = "Daniel Fong", email = "dfong8818@gmail.com"}
+]
 # This field corresponds to the "Description" metadata field:
 # https://packaging.python.org/specifications/core-metadata/#description-optional
 readme = "README.md"
@@ -67,21 +70,15 @@ license = {file = "LICENSE.txt"}
 # Note that this is a list of additional keywords, separated
 # by commas, to be used to assist searching for the distribution in a
 # larger catalog.
-keywords = ["sample", "setuptools", "development"]
+keywords = ["easy", "help", "module"]
 
 # This should be your name or the name of the organization who originally
 # authored the project, and a valid email address corresponding to the name
-# listed.
-authors = [
-  {name = "A. Random Developer", email = "author@example.com" }
-]
 
 # This should be your name or the names of the organization who currently
 # maintains the project, and a valid email address corresponding to the name
 # listed.
-maintainers = [
-  {name = "A. Great Maintainer", email = "maintainer@example.com" }
-]
+
 
 # Classifiers help users find your project by categorizing it.
 #
@@ -119,7 +116,7 @@ classifiers = [
 # For an analysis of this field vs pip's requirements files see:
 # https://packaging.python.org/discussions/install-requires-vs-requirements/
 dependencies = [
-  "peppercorn"
+  
 ]
 
 # List additional groups of dependencies here (e.g. development
@@ -146,21 +143,16 @@ test = ["coverage"]
 # maintainers, and where to support the project financially. The key is
 # what's used to render the link text on PyPI.
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Reports" = "https://github.com/pypa/sampleproject/issues"
-"Funding" = "https://donate.pypi.org"
-"Say Thanks!" = "http://saythanks.io/to/example"
-"Source" = "https://github.com/pypa/sampleproject/"
+"Homepage" = "https://github.com/Ethan7080/easy-py"
+"Bug Reports" = "https://github.com/Ethan7080/easy-py/issues"
+"Source" = "https://github.com/Ethan7080/easy-py"
 
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
-[project.scripts]
-sample = "sample:main"
+
 
 
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
 [tool.setuptools]
-# If there are data files included in your packages that need to be
-# installed, specify them here.
-package-data = {"sample" = ["*.dat"]}
+# 

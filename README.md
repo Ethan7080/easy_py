@@ -19,12 +19,6 @@ from easy_py import p
 # Instead of using print(), use p() for the same result
 p('Hello, world!')
 ```
-## Features
-Here's what you can do with easy_py:
-
-p(): A shorthand for the print() function.
-More features can be added in future versions.
-
 
 Here is a quick example that shows easy_py in action:
 
